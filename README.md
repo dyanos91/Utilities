@@ -1,4 +1,4 @@
-Utilities
+utils
 =========
 
-Files that I have found useful for programming
+dotfiles, fonts, configs, colorschemes, etc

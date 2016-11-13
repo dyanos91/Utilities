@@ -1,0 +1,59 @@
+"general settings
+"================================================================================
+"use 'Vim' options rather than 'Vi'
+set nocompatible
+
+"manage packaged using Pathogen
+execute pathogen#infect()
+
+"Allow backspace over indents, end of line, and start
+set backspace=indent,eol,start
+
+"set tab of 4
+set shiftwidth=4
+set tabstop=4
+
+"switch on syntax highlighting
+syntax on
+
+"enable filetype detection and language independent indenting
+filetype plugin indent on
+
+"turn on line numbers 
+set number
+
+"add line number/column info in bottom right corner
+set ruler
+
+"prevent the creation of annoying swp files
+set noswapfile
+
+"allow for use of the mouse
+set mouse=a
+
+"color & theme
+"================================================================================
+"allow for use of 256 colors in terminal vim
+if $COLORTERM == 'gnome-terminal'
+	set t_Co=256
+endif
+
+colorscheme solarized
+set background=dark
+
+"mac
+"set guifont=Anonymous\ Pro\ for\ Powerline:h13
+
+"linux
+set guifont=Anonymous\ Pro\ for\ Powerline\ 11
+
+"airline
+"================================================================================
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts=1
+
+"turn off airline whitespace checks
+let g:airline#extensions#whitespace#enabled=0
+
+"always use a status line
+set laststatus=2
