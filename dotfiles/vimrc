@@ -6,24 +6,24 @@ set nocompatible
 "manage packaged using Pathogen
 execute pathogen#infect()
 
-"Allow backspace over indents, end of line, and start
-set backspace=indent,eol,start
-
-"set tab of 4
-set shiftwidth=4
-set tabstop=4
-
-"switch on syntax highlighting
+"turn on syntax highlighting
 syntax on
-
-"enable filetype detection and language independent indenting
-filetype plugin indent on
 
 "turn on line numbers 
 set number
 
 "add line number/column info in bottom right corner
 set ruler
+
+"enable filetype detection and language independent indenting
+filetype plugin indent on
+
+"Allow backspace over indents, end of line, and start
+set backspace=indent,eol,start
+
+"set tab of 4
+set shiftwidth=4
+set tabstop=4
 
 "prevent the creation of annoying swp files
 set noswapfile
@@ -40,6 +40,7 @@ endif
 
 colorscheme solarized
 set background=dark
+set colorcolumn=100
 
 "mac
 "set guifont=Anonymous\ Pro\ for\ Powerline:h13
@@ -57,3 +58,12 @@ let g:airline#extensions#whitespace#enabled=0
 
 "always use a status line
 set laststatus=2
+
+"syntastic
+"================================================================================
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_checkers = ['flake8', 'mypy', 'pylint']
