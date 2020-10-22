@@ -3,9 +3,6 @@
 "use 'Vim' options rather than 'Vi'
 set nocompatible
 
-"manage packaged using Pathogen
-execute pathogen#infect()
-
 "turn on syntax highlighting
 syntax on
 
