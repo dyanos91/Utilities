@@ -19,8 +19,10 @@ filetype plugin indent on
 set backspace=indent,eol,start
 
 "set tab of 4
-set shiftwidth=4
 set tabstop=4
+set shiftwidth=4
+set noexpandtab		" use tabs, not spaces
+%retab!				" retabulate the entire file
 
 "prevent the creation of annoying swp files
 set noswapfile
