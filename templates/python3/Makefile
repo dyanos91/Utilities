@@ -23,4 +23,4 @@ test: lint
 	pipenv run python3 -m pytest
 
 run: 
-	pipenv run python3 app/myapp.py
+	pipenv run python3 app/app.py
